@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of DevF</title>
+</head>
+<body>
+    <p>Por favor ingresa tus datos</p>
+    <input type="text" id="user" placeholder="Ingresa tu usuario" value="">
+    <input type="password" id="nip" placeholder="Ingresa tu nip" maxlength="4" onkeypress="return validateNumber(event)">
+    <button onclick="obtainUser()">Ingresar</button>
+</body>
+<script src="./Scripts/login.js"></script>
+</html>
