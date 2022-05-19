@@ -35,3 +35,11 @@ Al seleccionar retirar monto, el usuario debe escribir el monto a retirar. Al re
 saldo total.
 
 Como regla de negocio, una cuenta no debe de tener más de $990 y menos de $10. Es necesario hacer las validaciones pertinentes para que no se rompa esta regla de negocio.
+
+
+## [Link de la pagina](https://jantoniomorag.github.io/Proyect-Cajero-JS/)
+## Nota: Los usuarios y contraseñas son:
+## * nombre= Gera nip= 1916
+## * nombre= Mali nip= 2103
+## * nombre= Maui nip= 2309
+
