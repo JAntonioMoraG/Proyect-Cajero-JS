@@ -6,10 +6,7 @@ var perfil,users
 var arrayNames=["Gera","Mali","Maui"]
 var arrayControl=["control1","control2","control3"]
 var nombre=params.get('name')
-var names=document.getElementById("nombre")
-var money=document.getElementById("saldo")
-var other=document.getElementById("otro")
-
+var datos=document.getElementById("data")
 //Validaciones iniciales
 for(let i=0;i<arrayNames.length;i++){
     if(nombre==arrayNames[i]){
@@ -28,15 +25,13 @@ for(let i=0;i<arrayNames.length;i++){
 
 //funcion consultar saldo
 const consulta=()=>{
-    names.textContent="Hola "+perfil.name
-    money.textContent="Tu saldo actual es: $"+perfil.saldo
-    other.textContent="Para hacer otra transaccion solo selecciona la opcion"
+    data.innerHTML="Hola "+perfil.name+"<br>Tu saldo actual es: $"+perfil.saldo
 
 }
 
 //funcion para depositar 
 const deposito=()=>{
-
+    data.textContent=""
     deposit=parseInt(prompt("Ingresa la cantidad a depositar"))
     perfil.saldo+=deposit
     if(deposit>990){
@@ -51,7 +46,7 @@ const deposito=()=>{
     else{
         users.saldo=perfil.saldo
         localStorage.setItem(perfil.name, JSON.stringify(users))
-        money.textContent="Monto ingresado: $"+deposit +" saldo total: $"+perfil.saldo
+        data.innerHTML="Monto ingresado: $"+deposit +"<br>saldo total: $"+perfil.saldo
     }
 }
 
@@ -70,6 +65,6 @@ const retiro=()=>{
     else{
         users.saldo=perfil.saldo
         localStorage.setItem(perfil.name, JSON.stringify(users))
-        money.textContent="Monto retirado: $"+retire +" saldo total: $"+perfil.saldo
+        data.innerHTML="Monto retirado: $"+retire +"<br>saldo total: $"+perfil.saldo
     }
 }

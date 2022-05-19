@@ -4,17 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bank of DevF</title>
+    <link rel="stylesheet" href="./Style/styleIndex.css">
+    <link rel="stylesheet" href="./Style/styleIndex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <p id="welcome">Bienvenido selecciona tu transaccion</p>
-    <p id="nombre"></p>
-    <p id="saldo"></p>
-    <p id="otro"></p>
-    <button id="consulta" onclick="consulta()">Consulta Saldo</button>
-    <button id="deposito" onclick="deposito()">Depositar</button>
-    <button id="retiro" onclick="retiro()">Retirar</button>
-    <button id="cerrar" onclick="location.href ='./index.html'">Cerrar sesion</button>
+    <div class="flex-container">
+        <div class="marquesina">
+            <marquee direction="left" id="marquesina">Bienvenido Selecciona tu transaccion</marquee>
+        </div>
+        <div class="cajero">
+            <div class="superior">
+                <div class="view">
+                    <div class="button-screen">
+                        <div class="boton"></div>
+                        <div class="boton"></div>
+                        <div class="boton"></div>
+                    </div>
+                    <div class="screen2">
+                        <p id="data"></p>
+                        <div class="operaciones">
+                            <button id="consulta" class="button-transaction" onclick="consulta()">Consultar</button>
+                            <button id="deposito" class="button-transaction" onclick="deposito()">Depositar</button>
+                            <button id="retiro" class="button-transaction" onclick="retiro()">Retirar</button>
+                            <button id="cerrar" class="button-transaction" onclick="location.href ='./index.html'">Salir</button>
+                        </div>
+                    </div>
+                    <div class="button-screen">
+                        <div class="boton"></div>
+                        <div class="boton"></div>
+                        <div class="boton"></div>
+                    </div>
+                </div>     
+                <div class="card">
+                    <p>ATM</p>
+                    <div class="ranura"><div class="light"></div></div>
+                    <div class="insert-card"><div class="background-insert"></div></div>
+                    <div class="ranura"><div class="light"></div></div>
+                    <div class="insert-card"><div class="background-insert"></div><div class="tarjeta"><div class="bar"></div></div></div>
+                </div>
+            </div>
+            <div class="bills">
+                <div class="ranura"><div class="light"></div></div>
+            </div>
+                <div class="nipCode">
+                    <div class="line-numbers">
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers-red"></div>
+                    </div>
+                    <div class="line-numbers">
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers-yellow"></div>
+                    </div>
+                    <div class="line-numbers">
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers-green"></div>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    
 </body>
 <script src="./Scripts/transactions.js"></script>
 </html>
+
+
+

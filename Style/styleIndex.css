@@ -1,0 +1,215 @@
+*{
+    font-family: 'Boogaloo', cursive;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #87c3e5;
+}
+input{
+    margin-bottom: .6rem;
+    width: 60%;
+    margin-left: 20%;
+}
+.aceptar-button{
+    margin-bottom: 1rem;
+    width: 30%;
+    margin-left: 35%;
+    background-color: gray;
+    border:gray;
+    color: white;
+    padding: .5rem;
+    cursor: pointer;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+marquee{
+    color:blue;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-shadow: 0 0 5px blue,0 0 15px red,0 0 30px blue,0 0 50px red;
+
+}
+.head{
+    height: 4rem;
+    width: 80vh;
+    margin-top: 1rem;
+    background-color: black;
+}
+.marquesina{
+    background-color: black;
+    width: 100vh;
+    height: 15vh;
+    border: .3rem solid white;
+}
+.cajero{
+    display: flex;
+    background-color: #545b6c;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vh;
+    border: .3rem solid white;
+}
+.superior{
+    display: flex;
+    height: 49%;
+}
+.screen{
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 60%;
+    background-color: #85dcfb;
+    margin-top: 1.5rem;
+    border: solid black .5rem;
+}
+.screen2{
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 60%;
+    background-color: #85dcfb;
+    margin-top: 1.5rem;
+    border: solid black .5rem;
+}
+.button-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boton{
+    width: 2rem;
+    height: 2rem;
+    background-color: gray;
+    margin-bottom: 2rem;
+}
+.view{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    background-color:  #2d333b ;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    width: 20%;
+    height: 100%;
+}
+.ranura{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 5%;
+    background-color: black;
+}
+.light{
+    margin-top: .3rem;
+    width: 90%;
+    height: 20%;
+    background-color: green;
+}
+.insert-card{
+    background-color: #afafaf ;
+    margin-top: .3rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    height: 10%;
+}
+.background-insert{
+    background-color: gray;
+    margin-top: .4rem;
+    margin-left: .5rem;
+    width: 80%;
+    height: 50%;
+}
+.tarjeta{
+    background-color: orange;
+    width: 70%;
+    height: 300%;
+    margin-left: .8rem;
+}
+.tarjeta>.bar{
+    background-color: black;
+    width: 15%;
+    height: 100%;
+    margin-left: 78%;
+}
+.bills{
+    background-color: #2d333b;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    height: 5%;
+}
+.bills>.ranura{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 50%;
+    margin-left:3rem;
+    background-color: black;
+}
+.nipCode{
+    background-color: #2d333b;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 30%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.line-numbers{
+    margin-top: .6rem;
+    margin-left: 6rem;
+    display: flex;
+    width: 60%;
+    height: 25%;
+}
+.nip-numbers{
+    background-color: gray;
+    width:15%;
+    height: 80%;
+    margin: .3rem;
+    margin-left: .5rem;
+}
+.nip-numbers-green{
+    background-color: green;
+    width:15%;
+    height: 80%;
+    margin: .3rem;
+    margin-left: .5rem;
+}
+.nip-numbers-red{
+    background-color: red;
+    width:15%;
+    height: 80%;
+    margin: .3rem;
+    margin-left: .5rem;
+}
+.nip-numbers-yellow{
+    background-color: yellow;
+    width:15%;
+    height: 80%;
+    margin: .3rem;
+    margin-left: .5rem;
+}
+.button-transaction{
+    background-color: gray;
+    color: white;
+    border:gray;
+    cursor: pointer;
+}

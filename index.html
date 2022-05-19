@@ -5,12 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank of DevF</title>
+    <link rel="stylesheet" href="./Style/styleIndex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <p>Por favor ingresa tus datos</p>
-    <input type="text" id="user" placeholder="Ingresa tu usuario" value="">
-    <input type="password" id="nip" placeholder="Ingresa tu nip" maxlength="4" onkeypress="return validateNumber(event)">
-    <button onclick="obtainUser()">Ingresar</button>
+    <div class="flex-container">
+        <div class="marquesina">
+            <marquee direction="left">BANK OF DEVF x TONY</marquee>
+        </div>
+        <div class="cajero">
+            <div class="superior">
+                <div class="view">
+                    <div class="button-screen">
+                        <div class="boton"></div>
+                        <div class="boton"></div>
+                        <div class="boton"></div>
+                    </div>
+                    <div class="screen">
+                        <p class="intro">Por favor ingresa tus datos</p>
+                        <input type="text" id="user" placeholder="Ingresa tu usuario" value="">
+                        <input type="password" id="nip" placeholder="Ingresa tu nip" maxlength="4" onkeypress="return validateNumber(event)">
+                        <button class="aceptar-button" onclick="obtainUser()">Ingresar</button>
+                    </div>
+                    <div class="button-screen">
+                        <div class="boton"></div>
+                        <div class="boton"></div>
+                        <div class="boton"></div>
+                    </div>
+                </div>     
+                <div class="card">
+                    <p>ATM</p>
+                    <div class="ranura"><div class="light"></div></div>
+                    <div class="insert-card"><div class="background-insert"></div></div>
+                    <div class="ranura"><div class="light"></div></div>
+                    <div class="insert-card"><div class="background-insert"></div><div class="tarjeta"><div class="bar"></div></div></div>
+                </div>
+            </div>
+            <div class="bills">
+                <div class="ranura"><div class="light"></div></div>
+            </div>
+                <div class="nipCode">
+                    <div class="line-numbers">
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers-red"></div>
+                    </div>
+                    <div class="line-numbers">
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers-yellow"></div>
+                    </div>
+                    <div class="line-numbers">
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers"></div>
+                        <div class="nip-numbers-green"></div>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    
 </body>
 <script src="./Scripts/login.js"></script>
 </html>
